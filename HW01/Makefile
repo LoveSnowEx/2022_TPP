@@ -4,7 +4,7 @@ CFLAGS=-Wall -Wextra -std=c++17
 LDFLAGS=-lm
 
 TARGETS=main
-main_OBJ=main.o
+main_OBJ=vec.o maze.o robot.o main.o
 
 .PHONY: all
 
