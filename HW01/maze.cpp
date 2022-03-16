@@ -1,11 +1,11 @@
 #include "maze.h"
 
 bool Maze::isWalkable(const Vec &loc) const {
-	return cells_[loc.x][loc.y]->isWalkable();
+	return cells_[loc.y][loc.x]->isWalkable();
 }
 bool Maze::isInBound(const Vec &loc) const {
 	return loc.x >= 0 && loc.y >= 0
-			&& loc.x < height_ && loc.y < width_;
+			&& loc.x < width_ && loc.y < height_;
 }
 int Maze::getHeight() const {
 	return height_;

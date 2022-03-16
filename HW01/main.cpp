@@ -3,7 +3,7 @@
 #include "maze.h"
 
 int main() {
-	// freopen("in.txt", "r", stdin);
+	freopen("in.txt", "r", stdin);
 	int w, h;
 	long long n;
 	std::cin >> w >> h >> n; std::cin.ignore();
@@ -15,25 +15,30 @@ int main() {
 	Robot robot;
 	robot.loadMaze(&maze);
 
-	auto res = [&n, &robot]() mutable {
-		while(robot.getStep() < n) {
+	auto &&res = [&n, &robot]() mutable {
+		int step = 0;
+		std::map<std::pair<Vec, Robot::EDirection>, int> history;  // get step by status from history
+		std::vector<std::pair<Vec, Robot::EDirection>> path;  // get status by step
+		while(step < n) {
 			// turn right if can not walk forward
 			while(robot.boundFront() || robot.wallFront()) robot.turnRight();
+			
+			auto &&status = std::make_pair(robot.getLocation(), robot.getDirection());
 			// if status has appeared
-			if(robot.hasVisited()) {
+			
+			if(auto &&found = history.find(std::make_pair(robot.getLocation(), robot.getDirection())); found != history.end()) {
 				// reduce loop step
-				auto cur = robot.getStep(), pre = robot.getHistory().at(robot.getStatus());
-				n = pre + (n-pre) % (cur-pre);
-				robot.setStaus(robot.getStatus(n));
-				return robot.getLocation();
+				int pre = found->second;
+				n = pre + (n-pre) % (step-pre);
+				return path[n].first;
 			}
-			robot.logStatus();
+			history.emplace(status, step);
+			path.emplace_back(status);
 			robot.moveForward();
-			robot.setStep(robot.getStep()+1);
+			step++;
 		}
 		return robot.getLocation();
 	}();
-	
-	// because the result is row major, the output should be reverse
-	std::cout << res.y << ' ' << res.x << std::endl;
+
+	std::cout << res.x << ' ' << res.y << std::endl;
 }

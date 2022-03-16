@@ -13,12 +13,12 @@ public:
 		: height_(src.size())
 		, width_(height_ ? src[0].size() : 0)
 		, cells_(height_, std::vector<const IWalkableCell*>(width_)) {
-		for(int i = 0; i < height_; i++) {
-			for(int j = 0; j < width_; j++) {
-				switch(src[i][j]) {
-				case WALL: cells_[i][j] = &WallCell::getInstance(); break;
-				case ROBOT: robot_loc_ = {i, j}; [[fallthrough]];
-				default: cells_[i][j] = &FreeSpaceCell::getInstance(); break;
+		for(int y = 0; y < height_; y++) {
+			for(int x = 0; x < width_; x++) {
+				switch(src[y][x]) {  // switch char at (x, y) to set cell
+				case WALL: cells_[y][x] = &WallCell::getInstance(); break;
+				case ROBOT: robot_loc_ = {x, y}; [[fallthrough]];
+				default: cells_[y][x] = &FreeSpaceCell::getInstance(); break;
 				}
 			}
 		}
