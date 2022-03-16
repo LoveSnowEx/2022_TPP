@@ -333,12 +333,11 @@ const Vec &Robot::frontVec() const {
 
 ## main.cpp
 ```cpp
-#include <bits/stdc++.h>
+#include <iostream>
 #include "robot.h"
 #include "maze.h"
 
 int main() {
-	// freopen("in.txt", "r", stdin);
 	int w, h;
 	long long n;
 	std::cin >> w >> h >> n; std::cin.ignore();
@@ -350,7 +349,7 @@ int main() {
 	Robot robot;
 	robot.loadMaze(&maze);
 
-	auto res = [&n, &robot]() mutable {
+	auto &&res = [&n, &robot]() mutable {
 		int step = 0;
 		std::map<std::pair<Vec, Robot::EDirection>, int> history;  // get step by status from history
 		std::vector<std::pair<Vec, Robot::EDirection>> path;  // get status by step
@@ -358,10 +357,11 @@ int main() {
 			// turn right if can not walk forward
 			while(robot.boundFront() || robot.wallFront()) robot.turnRight();
 			
+			// make status
 			auto &&status = std::make_pair(robot.getLocation(), robot.getDirection());
-			// if status has appeared
-			
-			if(auto &&found = history.find(std::make_pair(robot.getLocation(), robot.getDirection())); found != history.end()) {
+
+			// found if status has appeared in history
+			if(auto &&found = history.find(status); found != history.end()) {
 				// reduce loop step
 				int pre = found->second;
 				n = pre + (n-pre) % (step-pre);
@@ -377,4 +377,49 @@ int main() {
 
 	std::cout << res.x << ' ' << res.y << std::endl;
 }
+
 ```
+### 程式解釋
+
+#### `int w, h`
+- 迷宮的寬高
+
+#### `lnog long n`
+- 機器人可以移動的最大步數
+
+#### `std::vector<std::string> lines(h)`
+- 迷宮的輸入
+
+#### `Maze maze(lines)`
+- 迷宮
+
+#### `Robot robot`
+- 機器人
+
+#### `auto &&res`
+- 機器人在迷宮移動完的最後位置
+
+#### `int step = 0`
+- 機器人已經移動的步數
+
+#### `std::map<std::pair<Vec, Robot::EDirection>, int> history`
+- 歷史紀錄，紀錄機器人在之前在這個位置及方向時的步數
+
+#### `std::vector<std::pair<Vec, Robot::EDirection>> path`
+- 路徑，紀錄機器人在每一步的位置及方向
+
+#### `auto &&status`
+- 機器人的狀態，含有位置及方向
+
+#### `auto &&found`
+- 搜尋歷史紀錄的結果，如果找不到，會得到 history.end()
+
+#### 過程
+1. 輸入迷宮的寬高以及最大步數，並讀取迷宮資料
+2. 建立 Maze 及 Robot
+3. 當機器人當前步數小於最大步數時:
+	1. 如果不能往前走，則右轉
+	2. 檢查當前狀態是否出現在歷史紀錄
+		1. 如果是，則將循環的步數(當前步數-歷史步數)扣掉，計算出最後的位置
+		2. 否則，記錄當前狀態並向前走直到達到最大步數
+4. 輸出機器人最後的位置

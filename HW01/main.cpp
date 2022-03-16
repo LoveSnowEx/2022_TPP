@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #include "robot.h"
 #include "maze.h"
 
@@ -23,10 +23,11 @@ int main() {
 			// turn right if can not walk forward
 			while(robot.boundFront() || robot.wallFront()) robot.turnRight();
 			
+			// make status
 			auto &&status = std::make_pair(robot.getLocation(), robot.getDirection());
-			// if status has appeared
-			
-			if(auto &&found = history.find(std::make_pair(robot.getLocation(), robot.getDirection())); found != history.end()) {
+
+			// found if status has appeared in history
+			if(auto &&found = history.find(status); found != history.end()) {
 				// reduce loop step
 				int pre = found->second;
 				n = pre + (n-pre) % (step-pre);
