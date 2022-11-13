@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/2022_TPP/HW04'
+g++ -MM -Wall -Wextra -std=c++17 -o obj/main.d main.cpp
+ 
+g++ -MM -Wall -Wextra -std=c++17 -o obj/String.d String.cpp
+ 
+g++ -Wall -Wextra -std=c++17 -O3 -c -o obj/String.o String.cpp
+g++ -Wall -Wextra -std=c++17 -O3 -c -o obj/main.o main.cpp
+g++ obj/String.o obj/main.o -o main 
+make: Leaving directory '/home/2022_TPP/HW04'
+ 

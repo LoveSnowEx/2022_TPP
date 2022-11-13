@@ -12,7 +12,7 @@ public:
 	Vec();
 	Vec(int x, int y);
 	Vec(const Vec &rhs);
-	Vec &operator=(const Vec &rhs);
+	cd Vec &operator=(const Vec &rhs);
 	bool operator==(const Vec &rhs) const;
 	bool operator!=(const Vec &rhs) const;
 	bool operator<(const Vec &rhs) const;
@@ -24,8 +24,10 @@ public:
 ```
 ### `class Vec`
 - 二維向量，方便在座標平面上做向量運算
-- `int x`: 水平座標
-- `int y`: 垂直座標
+#### `int x`
+- 水平座標
+#### `int y`
+- 垂直座標
 
 ## vec.cpp
 ```cpp
@@ -159,14 +161,14 @@ private:
 #### `static constexpr char WALL = '#', ROBOT = 'O'`
 - 牆壁及機器人代表的字元
 
-#### `class FreeSpaceCell`
+#### `static class FreeSpaceCell`
 - 空白的格子，使用單例模式
 
 ##### `const FreeSpaceCell &getInstance()`
 - 回傳空白格子的實例
 
-#### `class WallCell`
-- 牆壁的格子，使用單例模
+#### `static class WallCell`
+- 牆壁的格子，使用單例模式
 
 ##### `const WallCell &getInstance()`
 - 回傳牆壁格子的實例
@@ -379,6 +381,7 @@ int main() {
 }
 
 ```
+
 ### 程式解釋
 
 #### `int w, h`

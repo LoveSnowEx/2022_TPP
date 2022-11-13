@@ -1,0 +1,28 @@
+
+	cout << "------constructor-----\n";
+	cout << "s1(): " << s1 << '\n';
+	cout << "s2(\"abc\"): " << s2 << '\n';
+	cout << "s3(s2): " << s3 << '\n';
+	cout << "------inoformation----\n";
+	cout << "s3.size(): " << s3.size() << '\n';
+	cout << "s3.c_tr(): " << s3.c_str() << '\n';
+	cout << "-------access--------\n";
+	cout << "s3[2]: " << s3[2] << '\n';
+	cout << "s3[2] = 'd';\n";
+	s3[2] = 'd';
+	cout << "s3: " << s3 << '\n';
+	cout << "-----operatior+=------\n";
+	cout << "s2 += s3;\n";
+	s2 += s3;
+	cout << "s2: " << s2 << '\n';
+	cout << "----copy assigment----\n";
+	cout << "s1 = s3;\n";
+	s1 = s3;
+	cout << "s1: " << s1 << '\n';
+	cout << "----------swap--------\n";
+	cout << "s1: " << s1 << '\n';
+	cout << "s2: " << s2 << '\n';
+	cout << "s1.sawp(s2);\n";
+	s1.swap(s2);
+	cout << "s1: " << s1 << '\n';
+	cout << "s2: " << s2 << '\n';

@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/2022_TPP/TEST'
+g++ -Wall -Wextra -std=c++17 -O2 -c -o obj/test2.o test2.cpp
+g++ obj/test2.o -o test2 -lm
+make: Leaving directory '/home/2022_TPP/TEST'
+ 

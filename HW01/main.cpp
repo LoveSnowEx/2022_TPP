@@ -3,7 +3,6 @@
 #include "maze.h"
 
 int main() {
-	freopen("in.txt", "r", stdin);
 	int w, h;
 	long long n;
 	std::cin >> w >> h >> n; std::cin.ignore();

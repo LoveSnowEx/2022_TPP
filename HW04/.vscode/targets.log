@@ -1,0 +1,382 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Oct 12 19:34:33 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 7)
+OBJ = String.o main.o
+# environment
+LC_ALL = C
+# environment
+PNPM_HOME = /root/.local/share/pnpm
+# makefile (from 'Makefile', line 2)
+OBJDIR := obj
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# environment
+ 
+VSCODE_CWD = /mnt/d/Users/Administrator/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+GOPATH = /root/go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/2022_TPP/HW04
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+OLDPWD = /mnt/d/Users/Administrator/AppData/Local/Programs/Microsoft VS Code
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+LANG = C
+# environment
+XAUTHORITY = /root/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/2022_TPP/HW04
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+P9K_SSH = 0
+# makefile (from 'obj/main.d', line 1)
+MAKEFILE_LIST := Makefile obj/String.d obj/main.d
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /root/.oh-my-zsh
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-JC6o3EsnJg,guid=8b3685eba3a8291fcbbcd6796346584e
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+MAKELEVEL := 0
+# environment
+DBUS_SESSION_BUS_PID = 396175
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /root/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:/root/go/bin:/root/.local/share/gem/ruby/3.0.0/bin:/root/.local/share/pnpm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Zulu/zulu-8-jre/bin/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/Program Files/Python39/Scripts/:/mnt/d/Program Files/Python39/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/d/Program Files/Bandizip/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/Users/Administrator/AppData/Local/Programs/Microsoft VS Code:/mnt/c/Program Files/dotnet/:/mnt/d/Program Files/Java/jdk-17/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Git/cmd:/mnt/f/ArchWSL:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/d/Users/Administrator/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/d/Program Files/JetBrains/PyCharm Community Edition 2021.3.2/bin:/mnt/c/Users/Administrator/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Administrator/AppData/Local/gitkraken/bin:/mnt/c/Program Files/JetBrains/CLion 2022.1.2/bin:/mnt/c/Users/Administrator/AppData/Local/Programs/oh-my-posh/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/root/.cargo/bin
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# automatic
+?F = $(notdir $?)
+# environment
+NAME = LOVESNOWEX
+# environment
+HOSTTYPE = x86_64
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+WSL_INTEROP = /run/WSL/396085_interop
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = root
+# environment
+LIBGL_ALWAYS_INDIRECT = 1
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Administrator/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# makefile
+.DEFAULT_GOAL := all
+# environment
+DISPLAY = 192.168.100.22:0
+# environment
+USER = root
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# makefile (from 'Makefile', line 4)
+LDFLAGS = 
+# environment
+DEBUGINFOD_URLS = https://debuginfod.archlinux.org 
+# environment
+IP = 172.26.173.63
+# environment
+PAGER = less
+# environment
+_ = /usr/sbin/make
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-fa094486-4272-463a-8a42-fbee7d266893.sock
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /root
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 6)
+TARGET = main
+# environment
+RUNLEVEL = 3
+# environment
+WSL_DISTRO_NAME = Arch
+# makefile (from 'Makefile', line 3)
+CXXFLAGS = -Wall -Wextra -std=c++17
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 1)
+CXX = g++
+# variable set hash-table stats:
+# Load=86/1024=8%, Rehash=0, Collisions=1/144=1%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 155014): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+obj/%.o: %.cpp
+#  recipe to execute (from 'Makefile', line 26):
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
+obj/%.d: %.cpp
+#  recipe to execute (from 'Makefile', line 29):
+	$(CXX) -MM $(CXXFLAGS) -o $@ $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+String.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/main.d: main.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-10-12 19:34:33.556354171
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 29):
+	$(CXX) -MM $(CXXFLAGS) -o $@ $<
+
+obj/String.o: String.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'String'
+#  Last modified 2022-05-27 18:40:14.066645618
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/String.o
+# automatic
+# * := String
+# automatic
+# < := String.cpp
+# automatic
+# + := String.cpp
+# automatic
+# % := 
+# automatic
+# ^ := String.cpp
+# automatic
+# ? := String.cpp
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/16=6%
+#  recipe to execute (from 'Makefile', line 26):
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
+# Not a target:
+obj/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 14)
+debug: CXXFLAGS += -g -DDEBUG -fsanitize=leak -fsanitize=undefined
+# makefile (from 'Makefile', line 15)
+debug: LDFLAGS += -fsanitize=address -lubsan -lasan 
+debug: main
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=2/32=6%, Rehash=0, Collisions=0/5=0%
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-22 21:48:07.859897573
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	rm -rf $(TARGET) $(BUILD_DIR) obj
+
+String.o: String.cpp String.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+String.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-27 18:44:06.596645588
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 18)
+dev: CXXFLAGS += -g -DDEBUG
+dev: main
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'Makefile', line 11)
+all: CXXFLAGS += -O3
+all: main
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/9=0%
+
+ 
+# Not a target:
+main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-09 17:05:29.372072168
+#  File has been updated.
+#  Successfully updated.
+
+main: obj/String.o obj/main.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-27 18:40:14.936645618
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  recipe to execute (from 'Makefile', line 23):
+	$(CXX) $(filter %.o, $^) -o $@ $(LDFLAGS)
+
+main.o: main.cpp String.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.SECONDEXPANSION:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/String.d: String.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'String'
+#  Last modified 2022-10-12 19:34:33.586354172
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 29):
+	$(CXX) -MM $(CXXFLAGS) -o $@ $<
+
+# files hash-table stats:
+# Load=19/1024=2%, Rehash=0, Collisions=0/59=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 33 / storage = 308 B / avg = 9 B
+# current buf: size = 8162 B / used = 308 B / count = 33 / avg = 9 B
+
+# strcache performance: lookups = 73 / hit rate = 54%
+# hash-table stats:
+# Load=33/8192=0%, Rehash=0, Collisions=0/73=0%
+# Finished Make data base on Wed Oct 12 19:34:33 2022
+
+ 
